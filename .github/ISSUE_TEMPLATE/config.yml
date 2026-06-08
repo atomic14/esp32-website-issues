@@ -1,5 +1,4 @@
+# Keep the structured correction form as the primary path, but still allow a blank
+# issue for anything that doesn't fit it. No contact links — there's nowhere more
+# useful to send someone who's here to report a correction.
 blank_issues_enabled: true
-contact_links:
-  - name: Browse the site
-    url: https://esp32.atomic14.com
-    about: The ESP32 module reference site these corrections are for.
