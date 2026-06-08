@@ -1,0 +1,28 @@
+name: Add a project
+description: Share an open-source project that uses an Espressif module, to feature on the site
+title: "Project: "
+labels: ["project"]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: GitHub (or project) URL
+      placeholder: https://github.com/you/your-project
+    validations:
+      required: true
+  - type: input
+    id: module
+    attributes:
+      label: Which Espressif module(s) does it use?
+      placeholder: e.g. ESP32-S3-WROOM-1
+  - type: textarea
+    id: about
+    attributes:
+      label: What is it?
+      description: A sentence or two about the project.
