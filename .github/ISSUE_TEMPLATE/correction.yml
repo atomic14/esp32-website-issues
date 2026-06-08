@@ -1,0 +1,34 @@
+name: Data correction
+description: Report a wrong or missing value on esp32.atomic14.com
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Which page is the error on? (the site's report link fills this in for you)
+      placeholder: https://esp32.atomic14.com/modules/...
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Section / field
+      placeholder: e.g. Pinout → GPIO12, or Wireless → Bluetooth
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong
+      description: What does the site currently say?
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should be
+  - type: input
+    id: source
+    attributes:
+      label: Source (datasheet + page #)
+      description: Where can this be verified? A datasheet name + page number is ideal.
